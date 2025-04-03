@@ -2,8 +2,8 @@
   "version": "v1",
   "packages": {
     "lvlup-utils": {
-      "version": "0.0.0",
-      "signature": "449126909b7adaece9d55f2ef8d3f763",
+      "version": "0.0.1",
+      "signature": "67a633543473ef6843d0ed2c76ccdf57",
       "file": true
     }
   }

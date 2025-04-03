@@ -1,6 +1,5 @@
 import './App.css'
 
-// import { isString } from 'lvlup-utils'
 import { useCounter } from './hooks/useCounter'
 
 function App() {

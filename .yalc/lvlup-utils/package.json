@@ -1,12 +1,13 @@
 {
   "name": "lvlup-utils",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
-  "typings": "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/lvlup-utils.js",
-      "require": "./dist/lvlup-utils.umd.cjs"
+      "require": "./dist/lvlup-utils.umd.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
@@ -25,5 +26,5 @@
     "test:watch": "vitest --watch",
     "check:types": "tsc --noEmit"
   },
-  "yalcSig": "449126909b7adaece9d55f2ef8d3f763"
+  "yalcSig": "67a633543473ef6843d0ed2c76ccdf57"
 }
