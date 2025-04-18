@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, ('src/index.ts')),
-      name: 'react-hooks-lib-facu',
+      name: 'react-hooks-lib-facuekl',
       formats: ["es", "umd"],
     },
     rollupOptions: {

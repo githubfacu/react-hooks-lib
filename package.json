@@ -1,19 +1,19 @@
 {
-  "name": "react-hooks-lib-facu",
+  "name": "react-hooks-lib-facuekl",
   "private": false,
   "version": "0.0.3",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/react-hooks-lib-facu.js",
-      "require": "./dist/react-hooks-lib-facu.umd.cjs"
+      "import": "./dist/react-hooks-lib-facuekl.js",
+      "require": "./dist/react-hooks-lib-facuekl.umd.cjs"
     }
   },
   "files": [
     "dist"
   ],
   "publishConfig": {
-    "registry": "htts://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org"
   },
   "scripts": {
     "dev": "vite",
