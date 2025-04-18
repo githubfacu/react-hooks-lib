@@ -1,19 +1,18 @@
-import { useEffect, useRef,useState } from "react";
+import { useRef,useState } from "react";
+
+import { useCleanupListeners } from "./useCleanupListeners";
 
 export function useClickout<T extends HTMLElement = HTMLElement>(initialState = false) {
   const [isOpen, setIsOpen] = useState(initialState);
   const elementRef = useRef<T | null>(null);
 
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (elementRef.current && !elementRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
+  const handleClickOutside = (event: MouseEvent) => {
+    if (elementRef.current && !elementRef.current.contains(event.target as Node)) {
+      setIsOpen(false);
     }
+  };
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  useCleanupListeners("mousedown", handleClickOutside);
 
   return { isOpen, setIsOpen, elementRef };
 }
