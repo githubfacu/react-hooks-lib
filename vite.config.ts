@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, ('src/index.ts')),
-      name: 'react-hooks-lib',
+      name: 'react-hooks-lib-facu',
       formats: ["es", "umd"],
     },
     rollupOptions: {

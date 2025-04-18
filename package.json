@@ -1,12 +1,12 @@
 {
-  "name": "react-hooks-lib",
-  "private": true,
+  "name": "react-hooks-lib-facu",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/react-hooks-lib.js",
-      "require": "./dist/react-hooks-lib.umd.cjs"
+      "import": "./dist/react-hooks-lib-facu.js",
+      "require": "./dist/react-hooks-lib-facu.umd.cjs"
     }
   },
   "files": [
